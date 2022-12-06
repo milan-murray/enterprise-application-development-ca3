@@ -1,0 +1,60 @@
+﻿@page "/fetchdata"
+@inject HttpClient Http
+
+<PageTitle>Find universities</PageTitle>
+
+<h1>Search for universities in countries</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (allUnis == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Use quick grid -->
+            @foreach (University uni in allUnis)
+            {
+                <tr>
+                    <th>@uni.name</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+}
+
+@code {
+    private University[]? allUnis;
+    String Country = "Ireland";
+
+    protected override async Task OnInitializedAsync()
+    {
+        allUnis = await Http.GetFromJsonAsync<University[]>($"http://universities.hipolabs.com/search?country={Country}");
+        Console.WriteLine(allUnis[0].name);
+    }
+
+    public class University
+    {
+        public string alpha_two_code { get; set; }
+        public string name { get; set; }
+        public string country { get; set; }
+        public List<string> web_pages { get; set; }
+        public string stateprovince { get; set; }
+        public List<string> domains { get; set; }
+    }
+}
