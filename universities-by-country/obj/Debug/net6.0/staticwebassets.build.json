@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y3i4lMqohdkNApmeSRxur6PK6AdN9RkmzpKDgxUWzEc=",
+  "Hash": "BYPpZmkl/nMefK6rlpWD3MtbqbLT8SpszEgllXEYfs8=",
   "Source": "universities-by-country",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.quickgrid/0.1.0-alpha.22351.1/staticwebassets/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
+      "SourceType": "Package",
+      "ContentRoot": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.quickgrid/0.1.0-alpha.22351.1/staticwebassets/",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
+      "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.quickgrid/0.1.0-alpha.22351.1/staticwebassets/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.quickgrid/0.1.0-alpha.22351.1/staticwebassets/QuickGrid.razor.js",
+      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
+      "SourceType": "Package",
+      "ContentRoot": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.quickgrid/0.1.0-alpha.22351.1/staticwebassets/",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
+      "RelativePath": "QuickGrid.razor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.quickgrid/0.1.0-alpha.22351.1/staticwebassets/QuickGrid.razor.js"
+    },
     {
       "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json",
       "SourceId": "universities-by-country",
@@ -219,6 +253,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.forms/6.0.11/lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll"
+    },
+    {
+      "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.QuickGrid.dll",
+      "SourceId": "universities-by-country",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.QuickGrid.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.quickgrid/0.1.0-alpha.22351.1/lib/net6.0/Microsoft.AspNetCore.Components.QuickGrid.dll"
     },
     {
       "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll",
@@ -5644,6 +5695,23 @@
       "OriginalItemSpec": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/System.Threading.dll"
     },
     {
+      "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/obj/Debug/net6.0/build-gz/pV89lI+k.gz",
+      "SourceId": "universities-by-country",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.QuickGrid.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.QuickGrid.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.QuickGrid.dll"
+    },
+    {
       "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/obj/Debug/net6.0/build-gz/PvZkCBuI.gz",
       "SourceId": "universities-by-country",
       "SourceType": "Computed",
@@ -7087,23 +7155,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
-    },
-    {
-      "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/wwwroot/sample-data/weather.json",
-      "SourceId": "universities-by-country",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/sample-data/weather.json"
     }
   ]
 }

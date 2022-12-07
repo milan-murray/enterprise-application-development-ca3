@@ -1,4 +1,4 @@
-﻿@page "/fetchdata"
+﻿@page "/search-by-country"
 @inject HttpClient Http
 
 <PageTitle>Find universities</PageTitle>
@@ -16,8 +16,8 @@ else
     <table class="table">
         <thead>
             <tr>
+                <th>Country</th>
                 <th>Name</th>
-                <th></th>
                 <th></th>
                 <th></th>
             </tr>
@@ -27,8 +27,8 @@ else
             @foreach (University uni in allUnis)
             {
                 <tr>
+                    <th>@uni.alpha_two_code</th>
                     <th>@uni.name</th>
-                    <th></th>
                     <th></th>
                     <th></th>
                 </tr>
