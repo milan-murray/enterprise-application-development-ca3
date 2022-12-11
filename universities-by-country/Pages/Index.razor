@@ -1,21 +1,27 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 
-@*
-@inject Blazored.LocalStorage.ILocalStorageService localStorage
-*@
-
 <div class="card bg-light text-dark shadow-lg">
     <div class="card-header text-center">
         <h3>Welcome to the main page for searching universities by country</h3>
     </div>
     <div class="card-body">
         <h4 class="text-center">Search a country</h4>
-        <p>Enter a country to see all relevant universities, eg: Ireland, Spain, United States</p>
+        <p>Enter a country to see all relevant universities, eg: Ireland, Spain, United States, ...</p>
         <div class="form-group">
             <input class="form-control" placeholder="Country" @bind="country" />
             <button class="btn btn-outline-dark" @onclick="SearchCountry">Search</button>
             <p class="text-danger" style="display: @SearchCountryErr">Invalid country</p>
+        </div>
+
+        <hr>
+
+        <h4 class="text-center">Search universities by name</h4>
+        <p>Enter the complete or partial name of a university eg: technical, valencia, art, ...</p>
+        <div class="form-group">
+            <input class="form-control" placeholder="Name" @bind="name" />
+            <button class="btn btn-outline-dark" @onclick="SearchName">Search</button>
+            <p class="text-danger" style="display: @SearchNameErr">Invalid country</p>
         </div>
 
         <hr>
@@ -33,7 +39,9 @@
 
 @code {
     public string SearchCountryErr = "None";
+    public string SearchNameErr = "None";
     private string country = String.Empty;
+    private string name = String.Empty;
     private string country1 = String.Empty;
     private string country2 = String.Empty;
 
@@ -46,6 +54,18 @@
                 country = "United+States";
             }
             NavigationManager.NavigateTo("search-by-country/" + country);
+        }
+        else
+        {
+            SearchCountryErr = "";
+        }
+    }
+
+    public async void SearchName()
+    {
+        if (name != String.Empty)
+        {
+            NavigationManager.NavigateTo("search-by-name/" + name);
         }
         else
         {
