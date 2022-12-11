@@ -9,44 +9,48 @@
 
 <PageTitle>Search universities</PageTitle>
 
-<h1>Search for universities in countries</h1>
-
-@if (allUnis == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <p style="display: @InvalidSearch">Country not found</p>
-    <table style="display: @ValidSearch" class="table">
-        <thead>
-            <tr>
-                <th>Country</th>
-                <th>Name</th>
-                <th>State/Province</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (University uni in allUnis)
-            {
-                <tr>
-                    <th>@uni.alpha_two_code</th>
-                    <th>@uni.name</th>
-                    <th>@uni.stateprovince</th>
-                    <th></th>
-                </tr>
-            }
-            
-        </tbody>
-    </table>
-    <p>Number of results: @numResults</p>
-    <!--
-    <QuickGrid ItemsProvider="@allUnisProvider" Virtualize="true">
-        <PropertyColumn Property="@(p => p.alpha_two_code)" Sortable="true" />
-    </QuickGrid>
-    -->
-}
+<div class="card bg-light text-dark shadow-lg">
+    <div class="card-header">
+        <h1>Search for universities in countries</h1>        
+    </div>
+    <div class="card-body">
+        @if (allUnis == null || InvalidSearch == "")
+        {
+            <p><em>Loading...</em></p>
+        }
+        else
+        {
+            <p style="display: @InvalidSearch">Country not found</p>
+            <table style="display: @ValidSearch" class="table text-dark">
+                <thead>
+                    <tr>
+                        <th class="text-dark">Country</th>
+                        <th class="text-dark">Name</th>
+                        <th class="text-dark">State/Province</th>
+                        <th class="text-dark"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (University uni in allUnis)
+                    {
+                        <tr>
+                            <th>@uni.alpha_two_code</th>
+                            <th>@uni.name</th>
+                            <th>@uni.stateprovince</th>
+                            <th></th>
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+            <!--
+            <QuickGrid ItemsProvider="@allUnisProvider" Virtualize="true">
+                <PropertyColumn Property="@(p => p.alpha_two_code)" Sortable="true" />
+            </QuickGrid>
+            -->
+        }
+    </div>
+</div>
 
 @code {
     [Parameter]
@@ -82,13 +86,13 @@ else
     {
         if (String.IsNullOrWhiteSpace(Country))
         {
+            Console.WriteLine("No Parameter");
             InvalidSearch = "";
         }
         else
         {
             ValidSearch = "";
             allUnis = await Http.GetFromJsonAsync<University[]>($"http://universities.hipolabs.com/search?country={Country}");
-            Console.WriteLine(allUnis[0].name);
             
             numResults = allUnis.Count();
         }

@@ -8,151 +8,68 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 977328171,
+        "HashCode": -1306090757,
         "Kind": "Components.Component",
-        "Name": "universities_by_country.Shared.MainLayout",
+        "Name": "universities_by_country.App",
         "AssemblyName": "universities-by-country",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "universities_by_country.Shared.MainLayout"
+          "Common.TypeName": "universities_by_country.App"
         }
       },
       {
-        "HashCode": 573078616,
+        "HashCode": 347506900,
         "Kind": "Components.Component",
-        "Name": "universities_by_country.Shared.MainLayout",
+        "Name": "universities_by_country.App",
         "AssemblyName": "universities-by-country",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "universities_by_country.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
+            "TagName": "universities_by_country.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "universities_by_country.Shared.MainLayout",
+          "Common.TypeName": "universities_by_country.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1618512455,
-        "Kind": "Components.ChildContent",
-        "Name": "universities_by_country.Shared.MainLayout.Body",
-        "AssemblyName": "universities-by-country",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "universities_by_country.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -1882267284,
-        "Kind": "Components.ChildContent",
-        "Name": "universities_by_country.Shared.MainLayout.Body",
-        "AssemblyName": "universities-by-country",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "universities_by_country.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "universities_by_country.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 2129329476,
+        "HashCode": -1652049109,
         "Kind": "Components.Component",
-        "Name": "universities_by_country.Shared.SurveyPrompt",
+        "Name": "universities_by_country.Pages.Counter",
         "AssemblyName": "universities-by-country",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "universities_by_country.Shared.SurveyPrompt"
+          "Common.TypeName": "universities_by_country.Pages.Counter"
         }
       },
       {
-        "HashCode": -940036816,
+        "HashCode": 618099225,
         "Kind": "Components.Component",
-        "Name": "universities_by_country.Shared.SurveyPrompt",
+        "Name": "universities_by_country.Pages.Counter",
         "AssemblyName": "universities-by-country",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "universities_by_country.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "universities_by_country.Pages.Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "universities_by_country.Shared.SurveyPrompt",
+          "Common.TypeName": "universities_by_country.Pages.Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -186,39 +103,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "universities_by_country.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1306090757,
-        "Kind": "Components.Component",
-        "Name": "universities_by_country.App",
-        "AssemblyName": "universities-by-country",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "universities_by_country.App"
-        }
-      },
-      {
-        "HashCode": 347506900,
-        "Kind": "Components.Component",
-        "Name": "universities_by_country.App",
-        "AssemblyName": "universities-by-country",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "universities_by_country.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "universities_by_country.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15107,11 +14991,6 @@
     {
       "FilePath": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/Shared/MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/Shared/SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
     },
     {
