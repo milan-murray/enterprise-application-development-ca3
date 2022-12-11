@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NOdRam9koxc54VddzmNfRmAMt2pQIX5IKERaa84bz+Smk22SXsGuXcwY/79xYCWh/R1qrdxjhHdlcQjf/242Pg==",
+  "dgSpecHash": "tpNXf2pYgFic0rz5dNzIZQ+KnyjYYim40O1CYxrcZwZGLQn1kKzYIScWwGsk8KxezPSzaFtDaD7om3vnIOOOWw==",
   "success": true,
   "projectFilePath": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/universities-by-country.csproj",
   "expectedPackageFiles": [
+    "/home/milan/.nuget/packages/blazored.localstorage/4.3.0/blazored.localstorage.4.3.0.nupkg.sha512",
     "/home/milan/.nuget/packages/microsoft.aspnetcore.authorization/6.0.11/microsoft.aspnetcore.authorization.6.0.11.nupkg.sha512",
     "/home/milan/.nuget/packages/microsoft.aspnetcore.components/6.0.11/microsoft.aspnetcore.components.6.0.11.nupkg.sha512",
     "/home/milan/.nuget/packages/microsoft.aspnetcore.components.analyzers/6.0.11/microsoft.aspnetcore.components.analyzers.6.0.11.nupkg.sha512",

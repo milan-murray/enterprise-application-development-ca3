@@ -1,11 +1,15 @@
 ﻿@page "/search-by-country"
+@page "/search-by-country/{country}"
 @inject HttpClient Http
+@inject NavigationManager NavigationManager
+@*
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@using Microsoft.AspNetCore.Components.QuickGrid
+*@
 
-<PageTitle>Find universities</PageTitle>
+<PageTitle>Search universities</PageTitle>
 
 <h1>Search for universities in countries</h1>
-
-<p>This component demonstrates fetching data from the server.</p>
 
 @if (allUnis == null)
 {
@@ -13,39 +17,81 @@
 }
 else
 {
-    <table class="table">
+    <p style="display: @InvalidSearch">Country not found</p>
+    <table style="display: @ValidSearch" class="table">
         <thead>
             <tr>
                 <th>Country</th>
                 <th>Name</th>
-                <th></th>
+                <th>State/Province</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            <!-- Use quick grid -->
             @foreach (University uni in allUnis)
             {
                 <tr>
                     <th>@uni.alpha_two_code</th>
                     <th>@uni.name</th>
-                    <th></th>
+                    <th>@uni.stateprovince</th>
                     <th></th>
                 </tr>
             }
             
         </tbody>
     </table>
+    <p>Number of results: @numResults</p>
+    <!--
+    <QuickGrid ItemsProvider="@allUnisProvider" Virtualize="true">
+        <PropertyColumn Property="@(p => p.alpha_two_code)" Sortable="true" />
+    </QuickGrid>
+    -->
 }
 
 @code {
-    private University[]? allUnis;
-    String Country = "Ireland";
+    [Parameter]
+    public String Country { get; set; }
+
+    public University[]? allUnis;
+    String InvalidSearch { get; set; } = "None";
+    String ValidSearch { get; set; } = "None";
+
+    //GridItemsProvider<University>? allUnisProvider;
+    int numResults;
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    allUnisProvider = async req =>
+    //    {
+    //        var url = NavManager.GetUriWithQueryParameters($"http://universities.hipolabs.com/search?country={Country}", new Dictionary<string, object?>
+    //        {
+    //            { "skip", req.StartIndex },
+    //            { "limit", req.Count },
+    //        });
+
+    //        var response = await Http.GetFromJsonAsync<University[]>(url, req.CancellationToken);
+    //        return GridItemsProviderResult.From(
+    //            items: response!,
+    //            totalItemCount: response!.Meta.Results.Total);
+    //    };
+
+    //    numResults = (await Http.GetFromJsonAsync<University[]>($"http://universities.hipolabs.com/search?country={Country}"))!.Meta.Results.Total;
+    //}
 
     protected override async Task OnInitializedAsync()
     {
-        allUnis = await Http.GetFromJsonAsync<University[]>($"http://universities.hipolabs.com/search?country={Country}");
-        Console.WriteLine(allUnis[0].name);
+        if (String.IsNullOrWhiteSpace(Country))
+        {
+            InvalidSearch = "";
+        }
+        else
+        {
+            ValidSearch = "";
+            allUnis = await Http.GetFromJsonAsync<University[]>($"http://universities.hipolabs.com/search?country={Country}");
+            Console.WriteLine(allUnis[0].name);
+            
+            numResults = allUnis.Count();
+        }
     }
 
     public class University

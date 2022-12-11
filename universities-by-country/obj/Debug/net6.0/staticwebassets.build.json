@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BYPpZmkl/nMefK6rlpWD3MtbqbLT8SpszEgllXEYfs8=",
+  "Hash": "p8UoM73ZK4PlM3ELd2R8lZiQMomVhIXSoLFbbw95jfA=",
   "Source": "universities-by-country",
   "BasePath": "/",
   "Mode": "Root",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/milan/.nuget/packages/microsoft.aspnetcore.components.webassembly/6.0.11/build/net6.0/blazor.webassembly.js"
+    },
+    {
+      "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Blazored.LocalStorage.dll",
+      "SourceId": "universities-by-country",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/milan/.nuget/packages/blazored.localstorage/4.3.0/lib/net6.0/Blazored.LocalStorage.dll"
     },
     {
       "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/dotnet.6.0.11.oh1oqo9g37.js",
@@ -6424,6 +6441,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll"
+    },
+    {
+      "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/obj/Debug/net6.0/build-gz/wBJUCKzs.gz",
+      "SourceId": "universities-by-country",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Blazored.LocalStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Blazored.LocalStorage.dll"
     },
     {
       "Identity": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/obj/Debug/net6.0/build-gz/WGcS7Dio.gz",

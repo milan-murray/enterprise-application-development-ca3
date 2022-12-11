@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.LocalStorage.dll": "sha256-Jq\/dS58mO5wtL2d0x\/FeAdDZ1bUTpTzPODJpBZUre\/4=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-XBf6Fkkj3RbYzEYJK50myG8AEUvn0E0yo79DWqFFF6s=",
       "Microsoft.AspNetCore.Components.dll": "sha256-UkZxt\/OLN+4go5yeFeBuXEx05BEm9nw5pNpR7smgtq4=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-Tb2pZ0EzhqIJ5HZiejbBy3MBrA+zY+77w58Gae1c0pQ=",
@@ -197,13 +198,13 @@
       "mscorlib.dll": "sha256-cx\/3nJhFns3tZhQNQOyiRyKJESKxOjLVufzWnri6KSA=",
       "netstandard.dll": "sha256-yWufW5W4SSfjocBcWTEDqnFwTd\/VYtLMc2Y9mPmlggc=",
       "System.Private.CoreLib.dll": "sha256-H009wzPwRoDZlwvpN4KLCsUwN7Y1AmjKB3PIEHA7ObQ=",
-      "universities-by-country.dll": "sha256-P9Fbi1Og0BO1MhDOcq1aPYDstJYlq7AniLjnO1V08ws="
+      "universities-by-country.dll": "sha256-CQrTWrY1fZi\/YCezy+Tg9GFHJbXLL2lnsXQX1RvdtFQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "universities-by-country.pdb": "sha256-2nloOFe\/nlTQK\/SLWEsK4\/OFvfAQ0XmgPHfZoyqAymM="
+      "universities-by-country.pdb": "sha256-0TZhQ05Zp8Fyc3QlKKajC5vCUTdGsOMke0iMy4clYDM="
     },
     "runtime": {
       "dotnet.6.0.11.oh1oqo9g37.js": "sha256-F30V+6jU3jwJYFZoLuwMAqzTiOXu6q7zGgOdjYBofDI=",

@@ -817,3 +817,7 @@
 /home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.QuickGrid.dll.gz
 /home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/Microsoft.AspNetCore.Components.QuickGrid.dll
 /home/milan/source-code/enterprise-application-development-ca3/universities-by-country/obj/Debug/net6.0/build-gz/pV89lI+k.gz
+/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Blazored.LocalStorage.dll
+/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/wwwroot/_framework/Blazored.LocalStorage.dll.gz
+/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/bin/Debug/net6.0/Blazored.LocalStorage.dll
+/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/obj/Debug/net6.0/build-gz/wBJUCKzs.gz
