@@ -170,6 +170,59 @@
         }
       },
       {
+        "HashCode": 1993937944,
+        "Kind": "Components.Component",
+        "Name": "universities_by_country.Pages.SearchName",
+        "AssemblyName": "universities-by-country",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SearchName"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Name",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Name"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "universities_by_country.Pages.SearchName"
+        }
+      },
+      {
+        "HashCode": 1936418857,
+        "Kind": "Components.Component",
+        "Name": "universities_by_country.Pages.SearchName",
+        "AssemblyName": "universities-by-country",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "universities_by_country.Pages.SearchName"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Name",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Name"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "universities_by_country.Pages.SearchName",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -2100389285,
         "Kind": "Components.Component",
         "Name": "universities_by_country.Pages.SearchCountry",
@@ -223,35 +276,35 @@
         }
       },
       {
-        "HashCode": -1652049109,
+        "HashCode": 1044371189,
         "Kind": "Components.Component",
-        "Name": "universities_by_country.Pages.Counter",
+        "Name": "universities_by_country.Pages.Index",
         "AssemblyName": "universities-by-country",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "universities_by_country.Pages.Counter"
+          "Common.TypeName": "universities_by_country.Pages.Index"
         }
       },
       {
-        "HashCode": 618099225,
+        "HashCode": -1052731765,
         "Kind": "Components.Component",
-        "Name": "universities_by_country.Pages.Counter",
+        "Name": "universities_by_country.Pages.Index",
         "AssemblyName": "universities-by-country",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "universities_by_country.Pages.Counter"
+            "TagName": "universities_by_country.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "universities_by_country.Pages.Counter",
+          "Common.TypeName": "universities_by_country.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15153,11 +15206,6 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/Pages/Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
@@ -15165,6 +15213,16 @@
     {
       "FilePath": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/Pages/SearchCountry.razor",
       "TargetPath": "Pages\\SearchCountry.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/Pages/CompareNum.razor",
+      "TargetPath": "Pages\\CompareNum.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/milan/source-code/enterprise-application-development-ca3/universities-by-country/Pages/SearchCountryAndName.razor",
+      "TargetPath": "Pages\\SearchCountryAndName.razor",
       "FileKind": "component"
     },
     {

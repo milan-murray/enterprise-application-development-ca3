@@ -20,7 +20,6 @@
         }
         else
         {
-            <p style="display: @InvalidSearch">No universities found</p>
             <table style="display: @ValidSearch" class="table text-dark">
                 <thead>
                     <tr>
@@ -49,6 +48,7 @@
             </QuickGrid>
             -->
         }
+        <p style="display: @InvalidSearch">No universities found</p>
     </div>
 </div>
 
@@ -60,7 +60,7 @@
     String InvalidSearch { get; set; } = "None";
     String ValidSearch { get; set; } = "None";
 
-    int numResults;
+    int? numResults;
 
     protected override async Task OnInitializedAsync()
     {
