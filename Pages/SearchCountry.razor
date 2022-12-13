@@ -1,6 +1,8 @@
 ﻿@page "/search-by-country"
 @page "/search-by-country/{country}"
 @inject HttpClient Http
+@using System.Text.Json
+@using System.Text.Json.Serialization
 @inject NavigationManager NavigationManager
 @*
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
@@ -59,6 +61,9 @@
     public University[]? allUnis;
     String? InvalidSearch { get; set; } = "None";
     String? ValidSearch { get; set; } = "None";
+    HttpClient http;
+    HttpResponseMessage resMessage;
+    HttpRequestMessage reqMessage;
 
     //GridItemsProvider<University>? allUnisProvider;
     int? numResults;
@@ -92,7 +97,17 @@
         else
         {
             ValidSearch = "";
-            allUnis = await Http.GetFromJsonAsync<University[]>($"http://universities.hipolabs.com/search?country={Country}");
+            http = new HttpClient();
+            reqMessage = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"http://universities.hipolabs.com/search?country={Country}")
+            };
+            resMessage = await http.SendAsync(reqMessage);
+            Console.WriteLine(await resMessage.Content.ReadAsStringAsync());
+
+            allUnis = JsonSerializer.Deserialize<University[]>(await resMessage.Content.ReadAsStringAsync());
+            Console.WriteLine(allUnis[0].name);
             
             numResults = allUnis.Count();
         }

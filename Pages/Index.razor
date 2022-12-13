@@ -20,7 +20,7 @@
         <hr>
 
         <h4 class="text-center">Search by country</h4>
-        <p>Enter a country to see all relevant universities, eg: Ireland, Spain, United States, ...</p>
+        <p>Enter a country to see all relevant universities, eg: Ireland, Spain, United+States, ...</p>
         <div class="form-group">
             <input class="form-control my-2" placeholder="Country" @bind="country" />
             <div class="clearfix">
@@ -91,10 +91,6 @@
     {
         if (country != String.Empty)
         {
-            if (country == "United States")
-            {
-                country = "United+States";
-            }
             NavigationManager.NavigateTo("search-by-country/" + country);
         }
         else
