@@ -25,19 +25,19 @@
 
 @code {
     [Parameter]
-    public String Country1 { get; set; }
+    public String? Country1 { get; set; }
 
     [Parameter]
-    public String Country2 { get; set; }
+    public String? Country2 { get; set; }
 
     public University[]? allUnis1;
     public University[]? allUnis2;
 
-    String InvalidSearch { get; set; } = "None";
-    String ValidSearch { get; set; } = "None";
+    String? InvalidSearch { get; set; } = "None";
+    String? ValidSearch { get; set; } = "None";
 
-    int numResults1;
-    int numResults2;
+    int? numResults1;
+    int? numResults2;
 
     protected override async Task OnInitializedAsync()
     {
@@ -60,11 +60,11 @@
 
     public class University
     {
-        public string alpha_two_code { get; set; }
-        public string name { get; set; }
-        public string country { get; set; }
-        public List<string> web_pages { get; set; }
-        public string stateprovince { get; set; }
-        public List<string> domains { get; set; }
+        public string? alpha_two_code { get; set; }
+        public string? name { get; set; }
+        public string? country { get; set; }
+        public List<string?>? web_pages { get; set; }
+        public string? stateprovince { get; set; }
+        public List<string?>? domains { get; set; }
     }
 }

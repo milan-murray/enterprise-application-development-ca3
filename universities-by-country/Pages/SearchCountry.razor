@@ -7,11 +7,11 @@
 @using Microsoft.AspNetCore.Components.QuickGrid
 *@
 
-<PageTitle>Search universities</PageTitle>
+<PageTitle>Universities in @Country</PageTitle>
 
 <div class="card bg-light text-dark shadow-lg">
     <div class="card-header text-center">
-        <h3>Search for universities in countries</h3>        
+        <h3>Universities in @Country</h3>        
     </div>
     <div class="card-body">
         @if (allUnis == null || InvalidSearch == "")
@@ -26,17 +26,17 @@
                         <th class="text-dark">Country</th>
                         <th class="text-dark">Name</th>
                         <th class="text-dark">State/Province</th>
-                        <th class="text-dark"></th>
+                        <th class="text-dark">URL</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (University uni in allUnis)
                     {
                         <tr>
-                            <th>@uni.alpha_two_code</th>
+                            <th>@uni.country</th>
                             <th>@uni.name</th>
                             <th>@uni.stateprovince</th>
-                            <th></th>
+                            <th><a href="#">@uni.domains[0]</a></th>
                         </tr>
                     }
                     
@@ -54,14 +54,14 @@
 
 @code {
     [Parameter]
-    public String Country { get; set; }
+    public String? Country { get; set; }
 
     public University[]? allUnis;
-    String InvalidSearch { get; set; } = "None";
-    String ValidSearch { get; set; } = "None";
+    String? InvalidSearch { get; set; } = "None";
+    String? ValidSearch { get; set; } = "None";
 
     //GridItemsProvider<University>? allUnisProvider;
-    int numResults;
+    int? numResults;
 
     //protected override async Task OnInitializedAsync()
     //{
@@ -100,11 +100,11 @@
 
     public class University
     {
-        public string alpha_two_code { get; set; }
-        public string name { get; set; }
-        public string country { get; set; }
-        public List<string> web_pages { get; set; }
-        public string stateprovince { get; set; }
-        public List<string> domains { get; set; }
+        public string? alpha_two_code { get; set; }
+        public string? name { get; set; }
+        public string? country { get; set; }
+        public List<string?>? web_pages { get; set; }
+        public string? stateprovince { get; set; }
+        public List<string?>? domains { get; set; }
     }
 }
