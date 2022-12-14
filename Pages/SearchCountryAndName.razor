@@ -14,6 +14,7 @@
         <p>Name: @Name</p>   
     </div>
     <div class="card-body">
+        <p style="display: @InvalidSearch">No results found</p>
         @if (allUnis == null || InvalidSearch == "")
         {
             <p><em>Loading...</em></p>
@@ -43,7 +44,6 @@
                 </tbody>
             </table>
         }
-        <p style="display: @InvalidSearch">Country not found</p>
     </div>
 </div>
 
@@ -83,11 +83,16 @@
             Console.WriteLine(await resMessage.Content.ReadAsStringAsync());
 
             allUnis = JsonSerializer.Deserialize<University[]>(await resMessage.Content.ReadAsStringAsync());
-            Console.WriteLine(allUnis[0].name);
             
-            numResults = allUnis.Count();
-            
-            numResults = allUnis.Count();
+            try {
+                Console.WriteLine(allUnis[0].name);
+
+                numResults = allUnis.Count();
+            }
+            catch
+            {
+                InvalidSearch = "";
+            }
         }
     }
 

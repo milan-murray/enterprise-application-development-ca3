@@ -10,16 +10,18 @@
         <h3>Compare the amount of universities between two countries</h3>        
     </div>
     <div class="card-body">
+        <p style="display: @InvalidSearch">No results found</p>
         @if (allUnis1 == null || allUnis2 == null)
         {
             <p><em>Loading...</em></p>
         }
         else
         {
-            <h4>@Country1: @numResults1</h4>
-            <h4>@Country2: @numResults2</h4>
+            <div class="text-center" style="display: @ValidSearch">
+                <h4>@Country1: @numResults1</h4>
+                <h4>@Country2: @numResults2</h4>
+            </div>
         }
-        <p style="display: @InvalidSearch">Country not found</p>
     </div>
 </div>
 
@@ -48,13 +50,21 @@
         }
         else
         {
-            ValidSearch = "";
             allUnis1 = await Http.GetFromJsonAsync<University[]>($"http://universities.hipolabs.com/search?country={Country1}");
             allUnis2 = await Http.GetFromJsonAsync<University[]>($"http://universities.hipolabs.com/search?country={Country2}");
-            
-            numResults1 = allUnis1.Count();
-            numResults2 = allUnis2.Count();
-            Console.WriteLine($"1: {numResults1}; 2: {numResults2}");
+
+            try {
+                Console.WriteLine(allUnis1[0].name);
+                Console.WriteLine(allUnis2[0].name);
+                numResults1 = allUnis1.Count();
+                numResults2 = allUnis2.Count();
+                Console.WriteLine($"1: {numResults1}; 2: {numResults2}");
+                ValidSearch = "";
+            }
+            catch
+            {
+                InvalidSearch = "";
+            }
         }
     }
 

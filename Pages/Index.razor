@@ -43,13 +43,14 @@
 
         <hr>
 
-        <h4>Compare countries</h4>
+        <h4 class="text-center">Compare countries</h4>
         <div class="form-group">
             <input class="form-control my-2" placeholder="Country 1" @bind="country1" />
             <input class="form-control my-2" placeholder="Country 2" @bind="country2" />
             <div class="clearfix">
                 <button class="btn btn-outline-dark float-end" @onclick="CompareCountries">Search</button>
             </div>
+            <p class="text-danger" style="display: @CompareErr">Invalid countries</p>
         </div>
     </div>
 </div>
@@ -58,6 +59,7 @@
     public string? SearchCountryErr = "None";
     public string? SearchNameErr = "None";
     public string? SearchErr = "None";
+    public string? CompareErr = "None";
     private string? country = String.Empty;
     private string? name = String.Empty;
     private string? country1 = String.Empty;
@@ -113,6 +115,13 @@
 
     public void CompareCountries()
     {
-        NavigationManager.NavigateTo("compare-countries/" + country1 + "/" + country2);
+        if (country1 != String.Empty && country2 != String.Empty)
+        {
+            NavigationManager.NavigateTo("compare-countries/" + country1 + "/" + country2);
+        }
+        else
+        {
+            CompareErr = "";
+        }
     }
 }

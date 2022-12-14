@@ -16,6 +16,7 @@
         <h3>Universities in @Country</h3>        
     </div>
     <div class="card-body">
+        <p style="display: @InvalidSearch">No results found</p>
         @if (allUnis == null || InvalidSearch == "")
         {
             <p><em>Loading...</em></p>
@@ -50,7 +51,6 @@
             </QuickGrid>
             -->
         }
-        <p style="display: @InvalidSearch">Country not found</p>
     </div>
 </div>
 
@@ -107,9 +107,17 @@
             Console.WriteLine(await resMessage.Content.ReadAsStringAsync());
 
             allUnis = JsonSerializer.Deserialize<University[]>(await resMessage.Content.ReadAsStringAsync());
-            Console.WriteLine(allUnis[0].name);
             
-            numResults = allUnis.Count();
+            try {
+                Console.WriteLine(allUnis[0].name);
+
+                numResults = allUnis.Count();
+            }
+            catch
+            {
+                InvalidSearch = "";
+            }
+            
         }
     }
 
